@@ -1,0 +1,48 @@
+* {
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	position: relative;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.socialA {
+	margin-right: 20px;
+	display: inline-block;
+	transition: all 0.2s;
+
+	&:hover .toFillPath {
+		fill: #0c45ff;
+	}
+
+	&:hover {
+		transform: translateY(-10px) scale(1.1) !important;
+	}
+
+	&:active .toFillPath {
+		fill: #0c45ff;
+		transform: translateY(-10px) scale(0.9) !important;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fff;
+	border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #e6e6e6;
+	border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #e0e0e0;
+}

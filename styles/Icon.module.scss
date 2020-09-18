@@ -1,0 +1,10 @@
+.social {
+	height: 35px;
+	width: 35px;
+	transition: all 0.2s;
+	margin-top: 15px;
+
+	&:first-child {
+		margin-right: 0;
+	}
+}
