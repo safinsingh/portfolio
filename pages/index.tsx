@@ -19,7 +19,8 @@ export default function Lander(props: indexProps) {
 				<div className={style.main}>
 					<div className={style.column}>
 						<h1 className={style.header}>
-							Hi, I&apos;m <span className={style.gradient}>Safin Singh</span>
+							Hi, I&apos;m{' '}
+							<span className={style.gradient}>Safin Singh</span>
 						</h1>
 						<h2 className={style.description}>
 							Full-stack Developer, Cybersecurity Competitor, High School
@@ -62,11 +63,14 @@ export default function Lander(props: indexProps) {
 						<h2 className={style.subheading}>Projects</h2>
 						<div className={style.projectGrid}>
 							{projects.length !== 0 ? (
-								projects.map((p: card) => <Card project={p} key={uuidv4()} />)
+								projects.map((p: card) => (
+									<Card project={p} key={uuidv4()} />
+								))
 							) : (
 								<p>
-									Oh no! It looks like this site has been rate limited for its
-									GitHub GraphQL Queries! Come back in an hour or so, sorry!
+									Oh no! It looks like this site has been rate limited
+									for its GitHub GraphQL Queries! Come back in an hour
+									or so, sorry!
 								</p>
 							)}
 						</div>
@@ -74,8 +78,9 @@ export default function Lander(props: indexProps) {
 				</div>
 				<div className={style.footer}>
 					<p>
-						Copyright © <span className={style.gradient}>Safin Singh</span> 2020
-						| Made with 💙 & Next.js
+						Copyright ©{' '}
+						<span className={style.gradient}>Safin Singh</span> 2020 |
+						Made with 💙 & Next.js
 					</p>
 				</div>
 			</div>
