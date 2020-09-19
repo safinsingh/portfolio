@@ -59,9 +59,14 @@ export default function Lander(props: indexProps) {
 					<div className={style.columnCenter}>
 						<h2 className={style.subheading}>Projects</h2>
 						<div className={style.projectGrid}>
-							{projects.map((p: card) => (
-								<Card project={p} />
-							))}
+							{projects.length !== 0 ? (
+								projects.map((p: card) => <Card project={p} />)
+							) : (
+								<p>
+									Oh no! It looks like this site has been rate limited for its
+									GitHub GraphQL Queries! Come back in an hour or so, sorry!
+								</p>
+							)}
 						</div>
 					</div>
 				</div>
