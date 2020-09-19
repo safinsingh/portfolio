@@ -7,8 +7,9 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-		"lint:ci": "eslint '*/**/*.{js,ts,tsx}' --quiet",
 		"format": "prettier --write '*/**/*.{js,ts,tsx,yml,scss}'",
+		"fix": "yarn format && yarn lint",
+		"lint:ci": "eslint '*/**/*.{js,ts,tsx}' --quiet",
 		"format:ci": "prettier --check '*/**/*.{js,ts,tsx,yml,scss}'"
 	},
 	"dependencies": {
