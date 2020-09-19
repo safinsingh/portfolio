@@ -57,11 +57,15 @@ export const endpoint = async () => {
 			query: gqlQuery,
 		}),
 	})
+
 	const ret = await projects.json()
 
 	return {
 		props: {
-			projects: ret.data.repositoryOwner?.itemShowcase.items.edges,
+			projects:
+				ret.data === undefined
+					? []
+					: ret.data.repositoryOwner.itemShowcase.items.edges,
 		},
 	}
 }
