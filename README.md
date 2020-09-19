@@ -2,4 +2,4 @@
 
 My portfolio site, built with Next.js and TypeScript.
 
-![MPL 2.0 License](./LICENSE)
+Licensed under the [Mozilla Public License 2.0](./LICENSE)
