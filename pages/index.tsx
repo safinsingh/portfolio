@@ -1,14 +1,11 @@
 import Card from '../components/Card'
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
-import server from '../config'
-import { card, indexProps } from '../lib'
+import { card, endpoint, indexProps } from '../lib'
 import style from '../styles/Lander.module.scss'
 
 export async function getStaticProps() {
-	const projects = await fetch(`${server}/api`)
-	const ret = await projects.json()
-	return ret
+	return endpoint()
 }
 
 export default function Lander(props: indexProps) {
