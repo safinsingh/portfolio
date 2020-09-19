@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid'
+
 import Card from '../components/Card'
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
@@ -60,7 +62,7 @@ export default function Lander(props: indexProps) {
 						<h2 className={style.subheading}>Projects</h2>
 						<div className={style.projectGrid}>
 							{projects.length !== 0 ? (
-								projects.map((p: card) => <Card project={p} />)
+								projects.map((p: card) => <Card project={p} key={uuidv4()} />)
 							) : (
 								<p>
 									Oh no! It looks like this site has been rate limited for its
