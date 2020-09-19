@@ -26,11 +26,11 @@ export default function Meta() {
 				property="og:description"
 				content="Hi, I'm Safin Singh. Full-stack Developer, Cybersecurity Competitor, High School Student."
 			/>
-			<meta property="og:image" content="https://safinsingh.tech/logo.png" />
+			<meta property="og:image" content="/logo.png" />
 			<meta property="og:image:type" content="image/png" />
 			<meta property="og:image:width" content="1200" />
 			<meta property="og:image:height" content="1200" />
-			<meta name="image" content="https://safinsingh.tech/logo.png" />
+			<meta name="image" content="/logo.png" />
 			<link rel="canonical" href="https://safinsingh.tech" />
 			<link rel="icon" href="/logo.png" />
 			<title>Safin Singh</title>
