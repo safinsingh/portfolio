@@ -1,7 +1,7 @@
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
 import ProjectGrid from '../components/ProjectGrid'
-import { endpoint, iconProps, indexProps } from '../lib'
+import { endpoint, iconProps, icons, indexProps } from '../lib'
 import style from '../styles/Lander.module.scss'
 
 export const getStaticProps = async () => {
@@ -25,11 +25,9 @@ const Lander = (props: indexProps) => {
 							Student
 						</h2>
 						<div className={style.socials}>
-							{['github', 'linkedin', 'dev', 'email'].map(
-								(i: iconProps['icon']) => (
-									<Icon icon={i} />
-								)
-							)}
+							{icons.map((i: iconProps['icon']) => (
+								<Icon icon={i} />
+							))}
 						</div>
 					</div>
 					<div className={style.columnCenter}>
