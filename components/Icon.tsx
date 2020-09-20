@@ -1,7 +1,7 @@
 import { iconProps } from '../lib'
 import style from '../styles/Icon.module.scss'
 
-export default function Icon(props: iconProps) {
+const Icon = (props: iconProps) => {
 	const { icon } = props
 	switch (icon) {
 		case 'email':
@@ -107,3 +107,5 @@ export default function Icon(props: iconProps) {
 			return <p>Oops! Couldn&apos;t find icon: {icon}</p>
 	}
 }
+
+export default Icon

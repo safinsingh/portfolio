@@ -4,7 +4,7 @@ import { card, graphqlErrMsg, projectGridProps } from '../lib'
 import style from '../styles/ProjectGrid.module.scss'
 import Card from './Card'
 
-export default function ProjectGrid(props: projectGridProps) {
+const ProjectGrid = (props: projectGridProps) => {
 	const { projects } = props
 	return (
 		<div className={style.projectGrid}>
@@ -16,3 +16,5 @@ export default function ProjectGrid(props: projectGridProps) {
 		</div>
 	)
 }
+
+export default ProjectGrid

@@ -21,8 +21,9 @@ export interface cardProps {
 	project: card
 }
 
-const gqlQuery = `query {
-	repositoryOwner(login: "safinsingh") {
+const gqlQuery = (username: string) => {
+	return `query {
+	repositoryOwner(login: "${username}") {
 	  ... on ProfileOwner {
 		 pinnedItemsRemaining
 		 itemShowcase {
@@ -44,6 +45,7 @@ const gqlQuery = `query {
 	  }
 	}
  }`
+}
 
 export const endpoint = async () => {
 	const projects: any = await fetch('https://api.github.com/graphql', {
@@ -54,7 +56,7 @@ export const endpoint = async () => {
 			Authorization: `Bearer ${process.env.TOKEN}`,
 		},
 		body: JSON.stringify({
-			query: gqlQuery,
+			query: gqlQuery('safinsingh'),
 		}),
 	})
 
