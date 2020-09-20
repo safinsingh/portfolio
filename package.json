@@ -8,7 +8,6 @@
 		"start": "next start",
 		"lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
 		"format": "prettier --write '*/**/*.{js,ts,tsx,yml,scss}'",
-		"fix": "yarn format && yarn lint",
 		"lint:ci": "eslint '*/**/*.{js,ts,tsx}' --quiet",
 		"format:ci": "prettier --check '*/**/*.{js,ts,tsx,yml,scss}'"
 	},
@@ -26,6 +25,7 @@
 	"devDependencies": {
 		"@types/node": "^14.11.1",
 		"@types/react": "^16.9.49",
+		"@types/uuid": "^8.3.0",
 		"@typescript-eslint/eslint-plugin": "^4.1.1",
 		"@typescript-eslint/parser": "^4.1.1",
 		"eslint": "^7.9.0",
@@ -40,10 +40,5 @@
 		"husky": "^4.3.0",
 		"prettier": "^2.1.2",
 		"typescript": "^4.0.2"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn format:ci && yarn lint:ci"
-		}
 	}
 }
