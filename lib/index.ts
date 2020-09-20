@@ -13,6 +13,13 @@ export interface iconProps {
 	icon: 'github' | 'email' | 'dev' | 'linkedin'
 }
 
+export const icons: Array<iconProps['icon']> = [
+	'github',
+	'linkedin',
+	'dev',
+	'email',
+]
+
 export interface indexProps {
 	projects: Array<card>
 }
