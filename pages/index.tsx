@@ -4,11 +4,11 @@ import ProjectGrid from '../components/ProjectGrid'
 import { endpoint, iconProps, indexProps } from '../lib'
 import style from '../styles/Lander.module.scss'
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
 	return endpoint()
 }
 
-export default function Lander(props: indexProps) {
+const Lander = (props: indexProps) => {
 	const { projects } = props
 	return (
 		<>
@@ -48,3 +48,5 @@ export default function Lander(props: indexProps) {
 		</>
 	)
 }
+
+export default Lander

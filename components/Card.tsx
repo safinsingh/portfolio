@@ -1,7 +1,7 @@
 import { cardProps } from '../lib'
 import style from '../styles/Card.module.scss'
 
-export default function Card(props: cardProps) {
+const Card = (props: cardProps) => {
 	const { project } = props
 	return (
 		<div>
@@ -17,3 +17,5 @@ export default function Card(props: cardProps) {
 		</div>
 	)
 }
+
+export default Card

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Meta() {
+const Meta = () => {
 	return (
 		<Head>
 			<title>Safin Singh</title>
@@ -37,3 +37,5 @@ export default function Meta() {
 		</Head>
 	)
 }
+
+export default Meta
