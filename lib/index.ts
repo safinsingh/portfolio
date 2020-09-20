@@ -69,3 +69,10 @@ export const endpoint = async () => {
 		},
 	}
 }
+
+export interface projectGridProps {
+	projects: Array<card>
+}
+
+export const graphqlErrMsg =
+	'Oh no! It looks like this site has been rate limited for its GitHub GraphQL Queries! Come back in an hour or so, sorry about that!'
