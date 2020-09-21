@@ -1,3 +1,5 @@
+import { v4 } from 'uuid'
+
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
 import ProjectGrid from '../components/ProjectGrid'
@@ -26,7 +28,7 @@ const Lander = (props: indexProps) => {
 						</h2>
 						<div className={style.socials}>
 							{icons.map((i: iconProps['icon']) => (
-								<Icon icon={i} />
+								<Icon icon={i} key={v4()} />
 							))}
 						</div>
 					</div>
