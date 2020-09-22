@@ -54,6 +54,17 @@ const gqlQuery = (username: string) => {
  }`
 }
 
+const dummyProject = {
+	node: {
+		url: 'https://google.com',
+		name: 'Google',
+		primaryLanguage: {
+			name: 'Go',
+		},
+		description: 'Google.com',
+	},
+}
+
 export const endpoint = async () => {
 	const projects: any = await fetch('https://api.github.com/graphql', {
 		method: 'POST',
@@ -73,7 +84,9 @@ export const endpoint = async () => {
 		props: {
 			projects:
 				ret.data === undefined
-					? []
+					? process.env.NODE_ENV === 'production'
+						? []
+						: Array.from({ length: 6 }).map((x) => dummyProject)
 					: ret.data.repositoryOwner.itemShowcase.items.edges,
 		},
 	}
