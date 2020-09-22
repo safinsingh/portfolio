@@ -31,4 +31,4 @@ rules:
    import/order: 'off'
    simple-import-sort/sort: 'error'
    import/extensions: 0
-	eslint/no-nested-ternary: 0
+   no-nested-ternary: 0
