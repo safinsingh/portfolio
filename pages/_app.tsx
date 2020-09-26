@@ -1,4 +1,4 @@
-import '../styles/globals.scss'
+import '../styles/Globals.scss'
 
 import { CSSReset, ThemeProvider } from '@chakra-ui/core'
 import { AppProps } from 'next/app'
