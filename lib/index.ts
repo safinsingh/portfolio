@@ -82,12 +82,7 @@ export const endpoint = async () => {
 
 	return {
 		props: {
-			projects:
-				ret.data === undefined
-					? process.env.NODE_ENV === 'production'
-						? []
-						: Array.from({ length: 6 }).map(() => dummyProject)
-					: ret.data.repositoryOwner.itemShowcase.items.edges,
+			projects: Array.from({ length: 6 }).map(() => dummyProject),
 		},
 	}
 }

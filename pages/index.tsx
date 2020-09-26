@@ -40,8 +40,16 @@ const Lander = (props: indexProps) => {
 				<div className={style.footer}>
 					<p>
 						Copyright ©{' '}
-						<span className={style.gradient}>Safin Singh</span> 2020 |
-						Made with 💙 & Next.js
+						<span className={style.gradient}>
+							<a
+								href="https://github.com/safinsingh/portfolio"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Safin Singh
+							</a>
+						</span>{' '}
+						2020 | Made with 💙 & Next.js
 					</p>
 				</div>
 			</div>
