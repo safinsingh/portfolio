@@ -10,7 +10,8 @@ const Icon = (props: iconProps) => {
 					target="_blank"
 					rel="noreferrer"
 					href="mailto:safin.singh@gmail.com"
-					className="socialA"
+					className={style.socialA}
+					aria-label="My email address"
 				>
 					<svg
 						className={style.social}
@@ -36,7 +37,8 @@ const Icon = (props: iconProps) => {
 					target="_blank"
 					rel="noreferrer"
 					href="https://dev.to/safinsingh"
-					className="socialA"
+					className={style.socialA}
+					aria-label="My dev.to profile"
 				>
 					<svg
 						role="img"
@@ -56,9 +58,10 @@ const Icon = (props: iconProps) => {
 			return (
 				<a
 					href="https://www.linkedin.com/in/safinsingh"
-					className="socialA"
+					className={style.socialA}
 					target="_blank"
 					rel="noreferrer"
+					aria-label="My LinkedIn profile"
 				>
 					<svg
 						className={style.social}
@@ -81,7 +84,8 @@ const Icon = (props: iconProps) => {
 					target="_blank"
 					rel="noreferrer"
 					href="https://github.com/safinsingh"
-					className="socialA"
+					className={style.socialA}
+					aria-label="My GitHub profile"
 				>
 					<svg
 						className={style.social}

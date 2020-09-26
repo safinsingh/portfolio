@@ -1,5 +1,6 @@
 import { v4 } from 'uuid'
 
+import Footer from '../components/Footer'
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
 import ProjectGrid from '../components/ProjectGrid'
@@ -37,13 +38,7 @@ const Lander = (props: indexProps) => {
 						<ProjectGrid projects={projects} />
 					</div>
 				</div>
-				<div className={style.footer}>
-					<p>
-						Copyright ©{' '}
-						<span className={style.gradient}>Safin Singh</span> 2020 |
-						Made with 💙 & Next.js
-					</p>
-				</div>
+				<Footer />
 			</div>
 		</>
 	)
