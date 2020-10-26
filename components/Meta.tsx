@@ -88,6 +88,10 @@ const Meta = () => {
 				href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
 				rel="stylesheet"
 			/>
+			<link rel="preload" as="image" href="/devto.svg" />
+			<link rel="preload" as="image" href="/email.svg" />
+			<link rel="preload" as="image" href="/github.svg" />
+			<link rel="preload" as="image" href="/linkedin.svg" />
 		</Head>
 	)
 }
