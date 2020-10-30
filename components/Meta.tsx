@@ -23,7 +23,7 @@ const Meta = () => {
 				property="og:description"
 				content="Hi, I'm Safin Singh. Full-stack Developer, Cybersecurity Competitor, High School Student."
 			/>
-			<meta property="og:url" content="https://safinsingh.tech" />
+			<meta property="og:url" content="https://safin.dev" />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content="Safin Singh" />
 			<meta property="og:site_name" content="Safin Singh" />
@@ -39,7 +39,7 @@ const Meta = () => {
 				name="twitter:card"
 				content="Hi, I'm Safin Singh. Full-stack Developer, Cybersecurity Competitor, High School Student."
 			/>
-			<meta name="twitter:url" content="https://safinsingh.tech" />
+			<meta name="twitter:url" content="https://safin.dev" />
 			<meta name="twitter:title" content="Safin Singh" />
 			<meta
 				name="twitter:description"
@@ -81,7 +81,7 @@ const Meta = () => {
 			{/* Misc */}
 			<meta name="viewport" content="width=device-width,initial-scale=1" />
 			<meta name="theme-color" content="#0668FF" />
-			<link rel="canonical" href="https://safinsingh.tech" />
+			<link rel="canonical" href="https://safin.dev" />
 
 			{/* External Dependencies */}
 			<link
