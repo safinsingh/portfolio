@@ -51,12 +51,12 @@ const gqlQuery = (username: string) => {
 
 const dummyProject = {
 	node: {
-		url: 'https://google.com',
-		name: 'Google',
+		url: 'https://github.com/rust-lang/rust',
+		name: 'rust',
 		primaryLanguage: {
-			name: 'Go',
+			name: 'Rust',
 		},
-		description: 'Google.com',
+		description: '✨  This is a cool project',
 	},
 }
 
