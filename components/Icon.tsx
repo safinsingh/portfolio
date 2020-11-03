@@ -13,11 +13,9 @@ const Icon = (props: iconProps) => {
 					className={style.socialA}
 					aria-label="My email address"
 				>
-					<img
-						src="/email.svg"
-						className={style.social}
-						alt="My email address"
-					/>
+					<svg className={style.social} aria-label="My email address">
+						<use xlinkHref="icons.svg#email" />
+					</svg>
 				</a>
 			)
 		case 'dev':
@@ -29,11 +27,9 @@ const Icon = (props: iconProps) => {
 					className={style.socialA}
 					aria-label="My dev.to profile"
 				>
-					<img
-						src="/devto.svg"
-						className={style.social}
-						alt="My dev.to profile"
-					/>
+					<svg className={style.social} aria-label="My dev.to profile">
+						<use xlinkHref="icons.svg#devto" />
+					</svg>
 				</a>
 			)
 		case 'linkedin':
@@ -45,11 +41,9 @@ const Icon = (props: iconProps) => {
 					rel="noreferrer"
 					aria-label="My LinkedIn profile"
 				>
-					<img
-						src="/linkedin.svg"
-						className={style.social}
-						alt="My LinkedIn profile"
-					/>
+					<svg className={style.social} aria-label="My email address">
+						<use xlinkHref="icons.svg#linkedin" />
+					</svg>
 				</a>
 			)
 		case 'github':
@@ -61,11 +55,9 @@ const Icon = (props: iconProps) => {
 					className={style.socialA}
 					aria-label="My GitHub profile"
 				>
-					<img
-						src="/github.svg"
-						className={style.social}
-						alt="My GitHub profile"
-					/>
+					<svg className={style.social} aria-label="My GitHub profile">
+						<use xlinkHref="icons.svg#github" />
+					</svg>
 				</a>
 			)
 		default:
