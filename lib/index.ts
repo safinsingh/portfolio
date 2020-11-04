@@ -13,10 +13,10 @@ export interface iconProps {
 	icon: 'github' | 'email' | 'dev' | 'linkedin'
 }
 
-export const icons: Array<iconProps['icon']> = ['github', 'linkedin', 'dev', 'email']
+export const icons: iconProps['icon'][] = ['github', 'linkedin', 'dev', 'email']
 
 export interface indexProps {
-	projects: Array<card>
+	projects: card[]
 }
 
 export interface cardProps {
@@ -88,7 +88,7 @@ export const endpoint = async () => {
 }
 
 export interface projectGridProps {
-	projects: Array<card>
+	projects: card[]
 }
 
 export const graphqlErrMsg =
