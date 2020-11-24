@@ -4,7 +4,7 @@
 	width: 35px;
 	transition: all 0.2s;
 	margin-top: 15px;
-	fill: #0f0f0f9a;
+	fill: #333333;
 
 	&:first-child {
 		margin-right: 0;
@@ -18,7 +18,7 @@
 	transition: all 0.2s;
 
 	&:hover svg {
-		transform: translateY(-2px) !important;
+		transform: translateY(-4px) !important;
 		fill: #0f0f0f !important;
 	}
 

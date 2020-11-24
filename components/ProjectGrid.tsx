@@ -1,6 +1,7 @@
 import { v4 } from 'uuid'
 
-import { card, graphqlErrMsg, projectGridProps } from '../lib'
+import { graphqlErrMsg } from '../lib/constants'
+import { card, projectGridProps } from '../lib/types'
 import style from '../styles/ProjectGrid.module.scss'
 import Card from './Card'
 
