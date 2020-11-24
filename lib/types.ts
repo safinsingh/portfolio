@@ -1,4 +1,4 @@
-export interface card {
+export interface Card {
 	node: {
 		url: string
 		name: string
@@ -9,20 +9,20 @@ export interface card {
 	}
 }
 
-export interface iconProps {
+export interface IconProps {
 	icon: 'github' | 'email' | 'dev' | 'linkedin'
 }
 
-export const icons: iconProps['icon'][] = ['github', 'linkedin', 'dev', 'email']
+export const icons: Array<IconProps['icon']> = ['github', 'linkedin', 'dev', 'email']
 
-export interface indexProps {
-	projects: card[]
+export interface IndexProps {
+	projects: Card[]
 }
 
 export interface cardProps {
-	project: card
+	project: Card
 }
 
 export interface projectGridProps {
-	projects: card[]
+	projects: Card[]
 }

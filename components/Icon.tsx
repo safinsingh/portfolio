@@ -1,7 +1,7 @@
-import { iconProps } from '../lib/types'
+import { IconProps } from '../lib/types'
 import style from '../styles/Icon.module.scss'
 
-const Icon = (props: iconProps) => {
+const Icon = (props: IconProps) => {
 	const { icon } = props
 	switch (icon) {
 		case 'email':

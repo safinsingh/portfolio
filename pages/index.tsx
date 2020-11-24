@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
 import ProjectGrid from '../components/ProjectGrid'
-import { iconProps, icons, indexProps } from '../lib/types'
+import { icons, IndexProps } from '../lib/types'
 import style from '../styles/Lander.module.scss'
 import { endpoint } from './api'
 
@@ -12,7 +12,7 @@ export const getServerSideProps = async () => {
 	return endpoint()
 }
 
-const Lander = (props: indexProps) => {
+const Lander = (props: IndexProps) => {
 	const { projects } = props
 	return (
 		<>
@@ -29,7 +29,7 @@ const Lander = (props: indexProps) => {
 							Student
 						</h2>
 						<div className={style.socials}>
-							{icons.map((i: iconProps['icon']) => (
+							{icons.map((i) => (
 								<Icon icon={i} key={v4()} />
 							))}
 						</div>
