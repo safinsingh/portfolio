@@ -1,4 +1,4 @@
-import { cardProps } from '../lib'
+import { cardProps } from '../lib/types'
 import style from '../styles/Card.module.scss'
 
 const Card = (props: cardProps) => {

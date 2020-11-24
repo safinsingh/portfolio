@@ -1,4 +1,4 @@
-import { iconProps } from '../lib'
+import { iconProps } from '../lib/types'
 import style from '../styles/Icon.module.scss'
 
 const Icon = (props: iconProps) => {

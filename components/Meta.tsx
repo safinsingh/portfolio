@@ -84,14 +84,12 @@ const Meta = () => {
 			<link rel="canonical" href="https://safin.dev" />
 
 			{/* External Dependencies */}
+			<link rel="preconnect" href="https://fonts.gstatic.com" />
 			<link
 				href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"
 				rel="stylesheet"
 			/>
-			<link rel="preload" as="image" href="/devto.svg" />
-			<link rel="preload" as="image" href="/email.svg" />
-			<link rel="preload" as="image" href="/github.svg" />
-			<link rel="preload" as="image" href="/linkedin.svg" />
+			<link rel="preload" as="image" href="/icons.svg" />
 		</Head>
 	)
 }

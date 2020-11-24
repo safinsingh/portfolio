@@ -1,11 +1,12 @@
 * {
 	font-family: 'IBM Plex Sans', sans-serif;
+	backface-visibility: hidden;
 }
 
 body {
 	position: relative;
 	overflow-x: hidden;
-	background-color: #f0f0f0;
+	background-color: #fafafa;
 }
 
 ::-webkit-scrollbar {
@@ -13,7 +14,6 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background: #fff;
 	border-radius: 99px;
 }
 

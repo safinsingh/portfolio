@@ -1,27 +1,6 @@
-export interface card {
-	node: {
-		url: string
-		name: string
-		primaryLanguage: {
-			name: string
-		}
-		description: string
-	}
-}
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-export interface iconProps {
-	icon: 'github' | 'email' | 'dev' | 'linkedin'
-}
-
-export const icons: iconProps['icon'][] = ['github', 'linkedin', 'dev', 'email']
-
-export interface indexProps {
-	projects: card[]
-}
-
-export interface cardProps {
-	project: card
-}
+import { dummyProject } from '../../lib/constants'
 
 const gqlQuery = (username: string) => {
 	return `query {
@@ -47,17 +26,6 @@ const gqlQuery = (username: string) => {
 	  }
 	}
  }`
-}
-
-const dummyProject = {
-	node: {
-		url: 'https://github.com/rust-lang/rust',
-		name: 'rust',
-		primaryLanguage: {
-			name: 'Rust',
-		},
-		description: '✨  This is a cool project',
-	},
 }
 
 export const endpoint = async () => {
@@ -87,9 +55,6 @@ export const endpoint = async () => {
 	}
 }
 
-export interface projectGridProps {
-	projects: card[]
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+	res.status(200).json((await endpoint()).props.projects)
 }
-
-export const graphqlErrMsg =
-	'Oh no! It looks like this site has been rate limited for its GitHub GraphQL Queries! Come back in an hour or so, sorry about that!'

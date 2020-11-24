@@ -4,10 +4,11 @@ import Footer from '../components/Footer'
 import Icon from '../components/Icon'
 import Meta from '../components/Meta'
 import ProjectGrid from '../components/ProjectGrid'
-import { endpoint, iconProps, icons, indexProps } from '../lib'
+import { iconProps, icons, indexProps } from '../lib/types'
+import { endpoint } from './api'
 import style from '../styles/Lander.module.scss'
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 	return endpoint()
 }
 
