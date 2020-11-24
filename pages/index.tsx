@@ -5,8 +5,8 @@ import Icon from '../components/Icon'
 import Meta from '../components/Meta'
 import ProjectGrid from '../components/ProjectGrid'
 import { iconProps, icons, indexProps } from '../lib/types'
-import { endpoint } from './api'
 import style from '../styles/Lander.module.scss'
+import { endpoint } from './api'
 
 export const getServerSideProps = async () => {
 	return endpoint()
